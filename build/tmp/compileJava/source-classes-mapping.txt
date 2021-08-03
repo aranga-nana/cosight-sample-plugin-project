@@ -1,2 +1,0 @@
-au/com/cosight/sample/PluginApp.java
- au.com.cosight.sample.PluginApp
