@@ -11,6 +11,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.UUID;
+
 @SpringBootApplication
 @EnableCosightRuntimeContext
 public class PluginApp implements CommandLineRunner {
@@ -20,6 +22,7 @@ public class PluginApp implements CommandLineRunner {
     private CosightExecutionContext executionContext;
 
     public static void main(String[] args)  {
+        logger.info("{}", UUID.randomUUID().toString());
         SpringApplication.run(PluginApp.class,args);
     }
 
@@ -37,6 +40,7 @@ public class PluginApp implements CommandLineRunner {
             logger.info("ACCESS TOKEN {}",token.getAccessToken());
             logger.info("plugin end");
         }
+
 
     }
 }
