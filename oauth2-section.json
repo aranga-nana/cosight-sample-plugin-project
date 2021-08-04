@@ -1,0 +1,7 @@
+{
+  "type": "AUTHORISATION_CODE",
+  "authorisationUrl": "https://login.xero.com/identity/connect/authorize",
+  "tokenUrl": "https://identity.xero.com/connect/token",
+  "scope": "openid profile email accounting.transactions",
+  "refreshUrl": ""
+}
