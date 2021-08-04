@@ -27,7 +27,7 @@ dependencies {
     // implementation 'au.com.cosight:cosight-sdk:1.4.0'
 
     // implementation 'au.com.cosight:cosight-model:1.4.0'
-    implementation files('../cosight-model/build/libs/cosight-model-1.4.1-SNAPSHOT.jar')
+    implementation files('../cosight-model/build/libs/cosight-model-1.4.1.jar')
 
     implementation 'org.springframework:spring-web:5.3.5'
 
