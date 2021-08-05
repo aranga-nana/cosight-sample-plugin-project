@@ -11,6 +11,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Date;
 import java.util.UUID;
 
 @SpringBootApplication
@@ -23,24 +24,23 @@ public class PluginApp implements CommandLineRunner {
 
     public static void main(String[] args)  {
         logger.info("{}", UUID.randomUUID().toString());
+        logger.info("TS ===>{}",new Date().getTime());
         SpringApplication.run(PluginApp.class,args);
     }
 
     @Override
     public void run(String... args) throws Exception {
+
         logger.info("plugin starting..");
         // execution context
         logger.info("EXECUTION CONTEXT {}",executionContext.getRuntimeInfo());
 
-        // External OAuth2 provider integration
-        ExternalOAuth2Credentials credentials = ExternalOAuth2Credentials.getInstance();
+        final ExternalOAuth2Credentials credentials = ExternalOAuth2Credentials.getInstance();
         if (credentials.isValid()) {
             logger.info("CLIENT ID{}",credentials.getOauth2Config().getClientId());
             ExternalOauth2Token token = credentials.getToken();
             logger.info("ACCESS TOKEN {}",token.getAccessToken());
-            logger.info("plugin end");
         }
-
 
     }
 }

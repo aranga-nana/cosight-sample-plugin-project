@@ -1,7 +1,9 @@
 {
   "type": "AUTHORISATION_CODE",
+  "clientId": "50C0AA02C529479884527A6FDB03EC18",
+  "clientSecret": "WOUqam8ql4amYkxib1h98WMummYD-uq4AViHKAgoq2XXPaML",
   "authorisationUrl": "https://login.xero.com/identity/connect/authorize",
   "tokenUrl": "https://identity.xero.com/connect/token",
-  "scope": "openid profile email accounting.transactions",
+  "scope": "openid email accounting.transactions",
   "refreshUrl": ""
 }
