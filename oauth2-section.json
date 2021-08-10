@@ -1,9 +1,1 @@
-{
-  "type": "AUTHORISATION_CODE",
-  "clientId": "50C0AA02C529479884527A6FDB03EC18",
-  "clientSecret": "WOUqam8ql4amYkxib1h98WMummYD-uq4AViHKAgoq2XXPaML",
-  "authorisationUrl": "https://login.xero.com/identity/connect/authorize",
-  "tokenUrl": "https://identity.xero.com/connect/token",
-  "scope": "openid email accounting.transactions",
-  "refreshUrl": ""
-}
+{ "type": "AUTHORISATION_CODE", "clientId": "28026EA9E21A4F5495426035B83AFA9F", "clientSecret": "8DkvXnzlLfPZhFOz-PC193LH5f_DxEml8Nk1POlFda9HVwQC", "authorisationUrl": "https://login.xero.com/identity/connect/authorize", "scope": "openid profile email accounting.transactions accounting.contacts", "tokenUrl": "https://identity.xero.com/connect/token", "refreshUrl": "https://identity.xero.com/connect/token" }
