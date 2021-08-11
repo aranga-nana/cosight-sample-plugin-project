@@ -23,10 +23,10 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     //
-    //implementation files('../cosight-sdk/build/libs/cosight-sdk-1.3.3-SNAPSHOT.jar')
-    implementation 'au.com.cosight:cosight-sdk:1.3.4-SNAPSHOT'
+    //implementation files('../cosight-sdk/build/libs/cosight-sdk-1.3.7-SNAPSHOT.jar')
+    implementation 'au.com.cosight:cosight-sdk:1.3.7-SNAPSHOT'
 
-    implementation 'au.com.cosight:cosight-model:1.5.2-SNAPSHOT'
+    implementation 'au.com.cosight:cosight-model:1.5.3-SNAPSHOT'
     //implementation files('../cosight-model/build/libs/cosight-model-1.5.2-SNAPSHOT.jar')
 
     implementation 'org.springframework:spring-web:5.3.5'

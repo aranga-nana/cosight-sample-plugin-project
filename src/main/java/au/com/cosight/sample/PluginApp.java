@@ -4,6 +4,7 @@ import au.com.cosight.sdk.annotation.EnableCosightRuntimeContext;
 import au.com.cosight.sdk.auth.external.oauth.ExternalOAuth2Credentials;
 import au.com.cosight.sdk.auth.external.oauth.ExternalOauth2Token;
 import au.com.cosight.sdk.plugin.runtime.CosightExecutionContext;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class PluginApp implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        ObjectMapper mapper = new ObjectMapper();
         logger.info("plugin starting..");
         // execution context
         logger.info("EXECUTION CONTEXT {}",executionContext.getRuntimeInfo());
@@ -41,6 +43,8 @@ public class PluginApp implements CommandLineRunner {
             ExternalOauth2Token token = credentials.getToken();
             logger.info("ACCESS TOKEN {}",token.getAccessToken());
         }
+        logger.info("RUNTIME INFO{}",mapper.writeValueAsString(executionContext.getRuntimeInfo()));
+        logger.info("EXECUTION DONE....");
 
     }
 }
